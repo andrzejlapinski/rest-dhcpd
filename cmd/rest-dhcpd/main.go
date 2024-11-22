@@ -11,7 +11,7 @@ import (
 
 func main() {
 	var configPath string
-	flag.StringVar(&configPath, "configPath", "/etc/rest-dhcpd", "Path to config directory.")
+	flag.StringVar(&configPath, "configPath", "/home/user/go/src/github.com/andrzejlapinski/rest-dhcpd", "Path to config directory.")
 	flag.Parse()
 	err := configdb.Init(configPath)
 	if err != nil {
